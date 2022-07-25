@@ -1,0 +1,47 @@
+-- UPDATE HoaDon 
+-- SET Ngay = '2010-09-17 00:00:00.000'
+-- WHERE ISNULL(DIENGIA,'') =''
+
+
+-- TRUNCATE TABLE DMNV
+-- insert into DmNv(Ma_Nv)
+-- SELECT 'NV01'
+-- UNION ALL
+-- SELECT 'NV02'
+-- UNION ALL
+-- SELECT 'NV03'
+-- UNION ALL
+-- SELECT 'NV04'
+
+-- UPDATE DmNv
+-- set Ten_Nv ='Nguyen Van A'
+-- WHERE Ma_Nv ='nv01'
+-- UPDATE DmNv
+-- set Ten_Nv ='Nguyen Van B'
+-- WHERE Ma_Nv ='nv02'
+-- UPDATE DmNv
+-- set Ten_Nv ='Nguyen Van C'
+-- WHERE Ma_Nv ='nv03'
+-- UPDATE DmNv
+-- set Ten_Nv ='Nguyen Van D'
+-- WHERE Ma_Nv ='nv04'
+
+-- ALTER TABLE BanHang
+-- ADD Ma_Nv NVARCHAR(24)
+
+UPDATE BanHang
+SET MA_NV ='NV01'
+WHERE TIEN < 50000
+
+UPDATE BanHang
+SET MA_NV ='NV02'
+WHERE TIEN BETWEEN 50000 AND 100000
+
+
+UPDATE BanHang
+SET MA_NV ='NV03'
+WHERE TIEN BETWEEN 30000 AND 50000
+
+UPDATE BanHang
+SET MA_NV ='NV04'
+WHERE TIEN >100000
